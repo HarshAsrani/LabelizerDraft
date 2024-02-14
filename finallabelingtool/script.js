@@ -6,8 +6,8 @@ document.getElementById('htmlFile').addEventListener('change', function(event) {
     const reader = new FileReader();
     reader.onload = function() {
         uploadedHtml = reader.result;
-        console.log('HTML file content:', uploadedHtml);
-        // You can now manipulate the HTML content as needed
+        // Display the uploaded HTML content
+        document.getElementById('htmlDisplay').innerHTML = uploadedHtml;
     };
     reader.readAsText(event.target.files[0]);
 });
@@ -18,7 +18,7 @@ document.getElementById('tagsJsonFile').addEventListener('change', function(even
     reader.onload = function() {
         uploadedTagsJson = JSON.parse(reader.result);
         console.log('Tags JSON content:', uploadedTagsJson);
-        // Now you have the tags JSON to use for highlighting etc.
+        // Implement highlighting or manipulation based on tags here
     };
     reader.readAsText(event.target.files[0]);
 });
