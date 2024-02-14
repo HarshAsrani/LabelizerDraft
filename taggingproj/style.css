@@ -1,0 +1,11 @@
+/* style.css */
+hBox {
+    position: absolute;
+    background-color: yellow;
+    opacity: 0.5;
+    z-index: 99999;
+}
+
+.selected {
+    border: 2px solid red;
+}

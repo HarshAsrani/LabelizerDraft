@@ -1,0 +1,21 @@
+.hidden {
+    display: none;
+}
+
+#label-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+#doc-content {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 400px;
+}
