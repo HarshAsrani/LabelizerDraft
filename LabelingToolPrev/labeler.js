@@ -39,9 +39,8 @@ function removeHBox(hBox) {
     sTexts[delete_idx] = 'DEL';
     xpaths[delete_idx] = 'DEL';
     labels[delete_idx] = 'DEL';
-    c[delete_idx] = 'DEL';
     
-    updateStorage(xpaths, labels, sTexts, texts, c);
+    updateStorage(xpaths, labels, sTexts, texts);
 }
 
 // function highlightText(selectionRange, label, idx, xpaths) {
